@@ -4,7 +4,7 @@
 # Description
   Simple code interpreter on JavaScript.
   
-  Paarse code and displaying results in tables.
+  Parse code and displaying results in tables.
   
   Enter code in textfield, then press green button
   to interpret.
