@@ -1,0 +1,17 @@
+﻿— prog #1 lexer test —
+int a;  
+a = 5; 
+b= 45; 
+if (a<=4) && (b==b) {  
+a--;
+}
+cout<< b; 
+int home = 0;
+cin>> home;
+home = a - 5;
+int floor = home ^ 11;
+cout << home << @ ;
+speed = 5;
+while ( speed < 60 ) {
+speed = 10 % 2;
+}

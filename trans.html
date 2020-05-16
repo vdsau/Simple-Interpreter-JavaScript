@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Translyator</title>
+	 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+</head>
+<body>
+<style type="text/css">
+* {
+
+font-family: 'Comfortaa', cursive;
+}
+textarea { 
+resize: none;  }
+th {
+    text-align: center;
+}
+td {
+    text-align: center;
+}
+</style>
+	<!--<input type="file" name="program" id="program" accept='text/plain' onchange='openFile()'>-->
+    <div  align="center" id="inputField">
+        <textarea id="program" class="form-control"></textarea>
+        <input type="button" value="Очистити" onclick="location.reload(true);" class="btn btn-danger"  style="float:right;margin:1% 1%;" />
+        <input type="button" value="Виконати" onclick="execute();" class="btn btn-success" style="float:left;margin:1% 1%;" />
+    </div>
+	<img id="output">
+	<br/><br/><br/><br/><br/><br/>
+	<div class="container" id="cont">
+		<H4> <b>Таблиця лексем та класів</b> </H4>
+   	<table  id="lexemTable" class="table table-bordered">
+    	<tr>
+    	   <thead>
+   	 	   <th class="text-center" width="8%" scope="col">№</th>
+     	   <th class="text-center" scope="col">Рядок</th>
+    	   <th class="text-center" scope="col">Код лексеми</th>
+           <th class="text-center" scope="col">Значення</th>
+		   <th class="text-center" width="20%" scope="col">Клас лексеми</th>
+       	   </thead>
+       	   <tbody id="tbodyLexem">
+       	   </tbody>
+    </table>
+    <br>
+		<H4> <b> Таблиця ідентифікаторів</b> </H4>
+   	<table id="idnTable" class="table table-bordered">
+    	<tr>
+    	   <thead>
+   	 	   <th class="text-center" width="8%" scope="col">№</th>
+     	   <th class="text-center" scope="col">Значення</th>
+     	   <th class="text-center" scope="col">Тип</th>
+       	   </thead>
+       	   <tbody id="tbodyIDN">
+       	   </tbody>
+    </table>    
+    <br>
+		<H4> <b> Таблиця константних значень </b> </H4>
+   	<table id="conTable" class="table table-bordered">
+    	<tr>
+    	   <thead>
+   	 	   <th class="text-center" width="8%" scope="col">№</th>
+     	   <th class="text-center" scope="col">Значення</th>
+       	   </thead>
+       	   <tbody id="tbodyCON">
+       	   </tbody>
+    </table>    
+</div>
+ 	<script type="text/javascript" src="print.js"></script> 	
+ 	<script type="text/javascript" src="main.js"></script> 	
+
+</body>
+</html>
